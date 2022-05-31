@@ -15,18 +15,15 @@ using DodgeGame.Classes; /*Classes folder*/
 /*UWP Dodge game project 
 * Itay getahun 1070
 /*31.5.22 */
-/*Try this*/
+
 
 /*Overview:
 
-Using one class for game's logic in Board.cs 3 more for gamePieces and one I've copied from StackOverflaw for vitualKeyPressing I made a Rap themed Dodge game where user plays
-with keyboard up down right left or WSDA and R P and pressing space changes the hero& music. 
-The game aim to use inheritance idea and abstract classes whom i may use in other GUP technoligies in the future.
-
-The GamePiece is a two classes father for UserPiece and EnemyPiece which being builed by the Board Obj.
-The game run by few methods in the MaimXaml.cs i categorize them to essential and UI and additional theme to make the code clean and clear
-
+The main call several create methods to create Baord obj , UI objects and initialize a DispachTimer timer 
+any tick move enemy check game status and manage the game.
+the user uses keyboard to move or few shourtcut .
 */
+
 namespace DodgeGame
 {
     public sealed partial class MainPage : Page
