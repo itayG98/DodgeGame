@@ -12,6 +12,20 @@ using Windows.UI.Core;
 using Windows.System;
 using DodgeGame.Classes; /*Classes folder*/
 
+/*UWP Dodge game project 
+* Itay getahun 1070
+/*31.5.22 */
+
+/*Overview:
+
+Using one class for game's logic in Board.cs 3 more for gamePieces and one I've copied from StackOverflaw for vitualKeyPressing I made a Rap themed Dodge game where user plays
+with keyboard up down right left or WSDA and R P and pressing space changes the hero& music. 
+The game aim to use inheritance idea and abstract classes whom i may use in other GUP technoligies in the future.
+
+The GamePiece is a two classes father for UserPiece and EnemyPiece which being builed by the Board Obj.
+The game run by few methods in the MaimXaml.cs i categorize them to essential and UI and additional theme to make the code clean and clear
+
+*/
 namespace DodgeGame
 {
     public sealed partial class MainPage : Page
@@ -42,21 +56,21 @@ namespace DodgeGame
 
         /*src for images sound tracks and video*/
         /*BackGround photo*/
-        private const string backGroundPhoto = "ms-appx:///imagesSrc/EightMile2.jpg";
+        private const string backGroundPhoto = "ms-appx:///Assets/imagesSrc/EightMile2.jpg";
         /*first hero src*/
-        private const string Kunta = "ms-appx:///imagesSrc/Kendrick.png";
-        private const string KuntaSound = "ms-appx:///AudioFiles/KendrickHumble8Bit.mp3";
-        private const string KuntaClashSound = "ms-appx:///AudioFiles/BeHumbleKendrick.mp3";
+        private const string Kunta = "ms-appx:///Assets/imagesSrc/Kendrick.png";
+        private const string KuntaSound = "ms-appx:///Assets/AudioFiles/KendrickHumble8Bit.mp3";
+        private const string KuntaClashSound = "ms-appx:///Assets/AudioFiles/BeHumbleKendrick.mp3";
         /*second hero src*/
-        private const string Snoop = "ms-appx:///imagesSrc/Snoop.png";
-        private const string SnoopSound = "ms-appx:///AudioFiles/StillDRE8Bit.mp3";
-        private const string SnoopClashSound = "ms-appx:///AudioFiles/ProRapperSnoop.mp3";
+        private const string Snoop = "ms-appx:///Assets/imagesSrc/Snoop.png";
+        private const string SnoopSound = "ms-appx:///Assets/AudioFiles/StillDRE8Bit.mp3";
+        private const string SnoopClashSound = "ms-appx:///Assets/AudioFiles/ProRapperSnoop.mp3";
         /*third hero src*/
-        private const string Eminem = "ms-appx:///imagesSrc/Eminem.png";
-        private const string EminemSound = "ms-appx:///AudioFiles/TheRealSlimShady8Bit.mp3";
-        private const string EminemClashSound = "ms-appx:///AudioFiles/MotherEminem.mp3";
-        private const string DaBaby = "ms-appx:///imagesSrc/The_Baby.png";
-        private const string congrats = "ms-appx:///Video/KuntaCongrats.mp4";
+        private const string Eminem = "ms-appx:///Assets/imagesSrc/Eminem.png";
+        private const string EminemSound = "ms-appx:///Assets/AudioFiles/TheRealSlimShady8Bit.mp3";
+        private const string EminemClashSound = "ms-appx:///Assets/AudioFiles/MotherEminem.mp3";
+        private const string DaBaby = "ms-appx:///Assets/imagesSrc/The_Baby.png";
+        private const string congrats = "ms-appx:///Assets/Video/KuntaCongrats.mp4";
 
         public MainPage()
         {
@@ -344,13 +358,13 @@ namespace DodgeGame
             heroTheme.Name = "SoundTheme";
             heroTheme.Margin = new Thickness(0);
             heroTheme.IsLooping = true;
-            heroTheme.Volume = 0.4;
+            heroTheme.Volume = 0.2;
             FatherGrid.Children.Add(heroTheme);
 
             clashSound = new MediaElement();
             clashSound.Visibility = Visibility.Collapsed;
             clashSound.Name = "ClashTheme";
-            clashSound.Volume = 0.6;
+            clashSound.Volume = 0.4;
             clashSound.Margin = new Thickness(0);
             clashSound.AutoPlay = false;
             clashSound.IsLooping = false;
@@ -399,16 +413,16 @@ namespace DodgeGame
             ToolTip toolTipChangeHero = new ToolTip();
 
             BitmapIcon biPlay = new BitmapIcon();
-            biPlay.UriSource = new Uri("ms-appx:///imagesSrc/PlayFav.ico");
+            biPlay.UriSource = new Uri("ms-appx:///Assets/imagesSrc/PlayFav.ico");
 
             BitmapIcon biReplay = new BitmapIcon();
-            biReplay.UriSource = new Uri("ms-appx:///imagesSrc/ReplayFav.ico");
+            biReplay.UriSource = new Uri("ms-appx:///Assets/imagesSrc/ReplayFav.ico");
 
             BitmapIcon biPause = new BitmapIcon();
-            biPause.UriSource = new Uri("ms-appx:///imagesSrc/PauseFav.ico");
+            biPause.UriSource = new Uri("ms-appx:///Assets/imagesSrc/PauseFav.ico");
 
             BitmapIcon biChangeHero = new BitmapIcon();
-            biChangeHero.UriSource = new Uri("ms-appx:///imagesSrc/MicFav.ico");
+            biChangeHero.UriSource = new Uri("ms-appx:///Assets/imagesSrc/MicFav.ico");
 
             cmdBar = new CommandBar();
             cmdBar.Background = new SolidColorBrush(Color.FromArgb(85, 255, 255, 255));
