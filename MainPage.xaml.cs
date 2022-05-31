@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Windows.System;
 using Windows.Foundation;
 using Windows.UI.ViewManagement;
 using Windows.UI;
@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Shapes;
 using Windows.UI.Core;
 using Windows.System;
 using DodgeGame.Classes; /*Classes folder*/
+using System;
 
 /*UWP Dodge game project 
 * Itay getahun 1070
@@ -86,7 +87,7 @@ namespace DodgeGame
             createTimer(TIMEINTERVAL);
 
             /*event handlers*/
-            timer.Tick += TmerTick;
+            timer.Tick += TimerTick;
             Window.Current.CoreWindow.KeyDown += KeyDownMethod; /*Enables key down method*/
             Pause.Click += Pause_Click;
             Reset.Click += ReSet_Click;
@@ -144,17 +145,17 @@ namespace DodgeGame
         {
             /*game's main timer*/
             timer = new DispatcherTimer();
-            timer.Interval = new TimeSpan(0, 0, 0, 0, TIMEINTERVAL);
+            timer.Interval = new System.TimeSpan(0, 0, 0, 0, TIMEINTERVAL);
 
             /*Timer for closing congrats video*/
             Videotimer = new DispatcherTimer();
-            Videotimer.Interval = new TimeSpan(0, 0, VIDEODURATION);
+            Videotimer.Interval = new System.TimeSpan(0, 0, VIDEODURATION);
 
             timer.Start();
         }
 
         /*Game managment*/
-        private void TmerTick(object sender, object e)
+        private void TimerTick(object sender, object e)
         {
             /*moevs enemy ==> check for clash ==> decrease users life or remove enemis ==> check win check loose ==>
              * raise apropriate pop ==> raise level if win*/
