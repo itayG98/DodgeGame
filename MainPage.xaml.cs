@@ -54,6 +54,7 @@ namespace DodgeGame
         private const int VIDEODURATION = 67;
 
         /*src for images sound tracks and video*/
+        private const string congrats = "ms-appx:///Assets/Video/KuntaCongrats.mp4";
         /*BackGround photo*/
         private const string backGroundPhoto = "ms-appx:///Assets/imagesSrc/EightMile2.jpg";
         /*first hero src*/
@@ -69,7 +70,7 @@ namespace DodgeGame
         private const string EminemSound = "ms-appx:///Assets/AudioFiles/TheRealSlimShady8Bit.mp3";
         private const string EminemClashSound = "ms-appx:///Assets/AudioFiles/MotherEminem.mp3";
         private const string DaBaby = "ms-appx:///Assets/imagesSrc/The_Baby.png";
-        private const string congrats = "ms-appx:///Assets/Video/KuntaCongrats.mp4";
+        
 
         public MainPage()
         {
