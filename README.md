@@ -4,7 +4,7 @@ inspired by :  https://www.youtube.com/watch?v=hvBkoAl_KM8
 
 Overview : 
 
-This game is zero knowledge based but more of explanatory based project
+This game is less off knowledge based but more of explanatory based project
 I tried to make absract classes to manage the app and a nice UI for the playert to actuly have fun.
 As you may see the game has Slim-Shady themed music and images.
 
