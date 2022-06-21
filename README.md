@@ -20,4 +20,4 @@ In conclution the game aims to use inheritance idea and abstract classes whom i 
 If you come across you may leave you impression on my project.
 --20/06/22--
 
-![Uploading DodgeGame.png…]()
+![DodgeGame](https://user-images.githubusercontent.com/91791115/174876640-f2278e28-32ae-479b-9ba6-ffb4e82867fe.png)
