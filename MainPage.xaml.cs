@@ -127,14 +127,6 @@ namespace DodgeGame
             /*Responsible for creating UI object fo each gamePiece obj*/
 
             Rectangle currentShape = new Rectangle();
-            if (gp is UserPiece)
-            {
-                currentShape.Fill = new SolidColorBrush(Colors.DarkSeaGreen);
-            }
-            else if (gp is EnemyPiece)
-            {
-                currentShape.Fill = new SolidColorBrush(Colors.IndianRed);
-            }
             currentShape.Width = gp.RecWidth;
             currentShape.Height = gp.RecHeight;
             Canvas.SetLeft(currentShape, gp.X);
