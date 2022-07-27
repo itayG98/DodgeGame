@@ -1,11 +1,21 @@
-UWP Dodge game project
+# UWP Dodge game project.
+
 This game is my first UWP project in my fullstack developmemt course
-inspired by :  https://www.youtube.com/watch?v=hvBkoAl_KM8 
+inspired by:   
+https://www.youtube.com/watch?v=hvBkoAl_KM8 
 
-Overview : 
+**Overview :** 
 
-This game is less off knowledge based but more of explanatory based project
-I tried to make absract classes to manage the app and a nice UI for the playert to actuly have fun.
+I am happy to share my unique game project Rap inspired dodge game.
+
+**Game plan**
+
+The user try to escape from the enemis and let the crash into eachother at any level of speed
+the game also let you change user with apropirate musis sound.
+
+
+# over View:
+I tried to make absract classes of the diffrent game pieces to manage the app and a nice UI for the playert to actuly have fun.
 As you may see the game has Slim-Shady themed music and images.
 
 
